@@ -1,5 +1,5 @@
 import axiosClient from "../utils/axiosClient"
-import { useEffect } from "react"
+import { useEffect,useState } from "react"
 function AdminPliagrism(){
 
   const[reports,setreports]=useState([]);

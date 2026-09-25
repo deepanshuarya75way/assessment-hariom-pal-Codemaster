@@ -31,6 +31,17 @@ required:true
     required:true
   },
   status:{
-    type:String
-  }
+    type:String,
+    enum:[
+      "normal",
+      "suspicious",
+      "reviewed"
+    ],
+    default:"normal",
+  },
+
 })
+
+const Plagiarism = mongoose.model('Plagiarism',plagiarismSchema);
+
+module.exports = Plagiarism;
