@@ -156,7 +156,7 @@ const calculateSequenceSimilarity=(tokens1,
 const calculateCodeSmilarity=(code1,code2)=>{
   const rawtokens1=tokenizeCode(code1);
 
-  const rawtoekens2=tokenizeCode(code);
+  const rawtoekens2=tokenizeCode(code2);
   const tokens1=normalizeToken(rawtokens1);
   const tokens2=normalizeToken(rawtoekens2);
 
