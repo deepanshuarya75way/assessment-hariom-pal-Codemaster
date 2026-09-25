@@ -12,7 +12,7 @@ import AdminDelete from "./pages/AdminDelete";
 import AdminVideo from "./components/AdminVideo";
 import AdminUpload from "./components/AdminUpload";
 import DailyProblem from "./pages/DailyProblem";
-
+import AdminPliagrism from "./components/AdminPliagrism"
 function App(){
   const dispatch=useDispatch()
   
@@ -40,6 +40,8 @@ function App(){
    <Route path="/admin/delete" element={isAuthenticated && user?.role === 'admin' ? <AdminDelete /> : <Navigate to="/" />}></Route>
    <Route path="/admin/video" element={isAuthenticated && user?.role === 'admin' ? <AdminVideo /> : <Navigate to="/" />} />
    <Route path="/admin/upload/:problemId" element={isAuthenticated && user?.role === 'admin' ? <AdminUpload /> : <Navigate to="/" />} />
+   <Route path="/admin/plagiarism" element={isAuthenticated && user?.role === 'admin' ? <AdminPliagrism /> : <Navigate to="/" />} />
+  
   </Routes>
   )
 }

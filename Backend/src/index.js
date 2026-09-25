@@ -10,6 +10,7 @@ const userauth=require("./routes/userauth");
 const problemRouter=require("./routes/problemcreator");
 const submitrouter=require('./routes/submit');
 const videoRouter=require("./routes/videoCreator")
+const prouter=require("./routes/Plagiarism")
 const cors=require("cors")
 app.use(express.json());
 app.use(cookieParser());
@@ -22,6 +23,7 @@ app.use("/user",userauth);
 app.use('/problem',problemRouter)
 app.use('/submit',submitrouter);
 app.use('/video',videoRouter)
+app.use("/pliagiarism",prouter);
 app.get("/health", (req, res) => {
   res.status(200).json({
     success: true,

@@ -40,6 +40,12 @@ function Admin() {
       color: 'btn-success',
       bgColor: 'bg-success/10',
       route: '/admin/video'
+    },
+    {
+      id:'palgiarism',
+      title:'detect Plagiarism',
+      description:'detect two users submit same problem ',
+      routr:'/admin/plagiarism'
     }
   ];
 
